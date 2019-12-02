@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<definition name="blank" template="/WEB-INF/views/layout/layout.jsp"/>
+	
+	<definition name="index" extends="blank">
+		<put-attribute name="navigation">
+			<definition template="/WEB-INF/views/layout/navigation.jsp">
+				<put-attribute name="showonclick" value=""/>
+			</definition>
+		</put-attribute>
+		<put-attribute name="content" value="/WEB-INF/views/jsp/index.jsp"/>
+	</definition>
+	
+	<definition name="cart" extends="blank">
+		<put-attribute name="breadcrumb">
+			<definition template="/WEB-INF/views/layout/breadcrumb.jsp">
+					<put-attribute name="page" value="cart"/>
+			</definition>
+		</put-attribute>
+		<put-attribute name="content" value="/WEB-INF/views/jsp/cart.jsp"/>
+	</definition>
+	
+	<definition name="checkout" extends="blank">
+		<put-attribute name="breadcrumb">
+			<definition template="/WEB-INF/views/layout/breadcrumb.jsp">
+					<put-attribute name="page" value="checkout"/>
+			</definition>
+		</put-attribute>
+		
+		<put-attribute name="content" value="/WEB-INF/views/jsp/checkout.jsp"/>
+	</definition>
+	
+	<definition name="contact" extends="blank">
+		<put-attribute name="breadcrumb">
+			<definition template="/WEB-INF/views/layout/breadcrumb.jsp">
+					<put-attribute name="page" value="contact"/>
+			</definition>
+		</put-attribute>
+		<put-attribute name="content" value="/WEB-INF/views/jsp/contact.jsp"/>
+	</definition>
+	
+	<definition name="profile" extends="blank">
+		<put-attribute name="breadcrumb">
+			<definition template="/WEB-INF/views/layout/breadcrumb.jsp">
+					<put-attribute name="page" value="profile"/>
+			</definition>
+		</put-attribute>
+		<put-attribute name="content" value="/WEB-INF/views/jsp/profile.jsp"/>
+	</definition>
+	
+	<definition name="login" template="/WEB-INF/views/jsp/login.jsp">
+	</definition>
+	
+	<definition name="product" extends="blank">
+		<put-attribute name="breadcrumb">
+			<definition template="/WEB-INF/views/layout/breadcrumb.jsp">
+					<put-attribute name="page" value="product-page"/>
+			</definition>
+		</put-attribute>
+		<put-attribute name="content" value="/WEB-INF/views/jsp/product.jsp"/>
+	</definition>
+	
+	<definition name="shop" extends="blank">
+		<put-attribute name="breadcrumb">
+			<definition template="/WEB-INF/views/layout/breadcrumb.jsp">
+					<put-attribute name="page" value="shop"/>
+			</definition>
+		</put-attribute>
+		<put-attribute name="content" value="/WEB-INF/views/jsp/shop.jsp"/>
+	</definition>
+	
+	<definition name="register" extends="blank">
+		<put-attribute name="breadcrumb">
+			<definition template="/WEB-INF/views/layout/breadcrumb.jsp">
+					<put-attribute name="page" value="register"/>
+			</definition>
+		</put-attribute>
+		<put-attribute name="content" value="/WEB-INF/views/jsp/register.jsp"/>
+	</definition>
+	
+	<definition name="wishlist" extends="blank">
+		<put-attribute name="breadcrumb">
+			<definition template="/WEB-INF/views/layout/breadcrumb.jsp">
+					<put-attribute name="page" value="wishlist"/>
+			</definition>
+		</put-attribute>
+		<put-attribute name="content" value="/WEB-INF/views/jsp/wishlist.jsp"/>
+	</definition>
+	
+</tiles-definitions>
